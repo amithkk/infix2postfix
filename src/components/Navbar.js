@@ -13,7 +13,7 @@ const Navbar = () => {
                     <a href="https://github.com/amithkk/infix2postfix">
                         <button id="gh-btn" className="btn navbar-btn btn-primary">
                             <i className="glyphicon glyphicon-console"/>
-                            View On Github
+                            View On GitHub
                         </button>
                     </a>
                 </div>
