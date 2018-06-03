@@ -1,0 +1,25 @@
+#result_table{
+  margin: 0px auto;
+  padding-top: 20px;
+  padding: 20px 4px 4px 4px;
+}
+
+.table {
+  max-width: 50em;
+  margin: 0px auto;
+}
+
+#result_container{
+  margin: 0px auto;
+  max-width: 50em;
+  padding: 20px 4px 4px 4px;
+}
+
+.well{
+  margin-top: 4px;
+}
+
+th {
+  text-align: center;   
+}
+
