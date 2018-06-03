@@ -1,7 +1,9 @@
 import React, {Component} from 'react';
 import Infixinput from './components/Infixinput';
+import Navbar from './components/Navbar'
 import BootstrapTable from 'react-bootstrap-table-next';
 import './App.css';
+
 
 class App extends Component {
     constructor() {
@@ -106,23 +108,25 @@ class App extends Component {
             }
         ];
         return (
-            <div className="text-center">
-                <h1> Infix to Postfix Converter  </h1>
-                <Infixinput onConvert={this.onConvertAction}/>
-                <div id="result_table" className="center">
-                    <BootstrapTable
-                        keyField="id"
-                        data={this.state.posTable}
-                        columns={columns}
-                        striped
-                        noDataIndication={() =>
-                            'Enter a valid infix Expression and press Convert'
-                        }
-                    />
-                </div>
-                <div id="result_container">
-                    {resultText}
-                    {this.state.result && <div className="well">{this.state.result}</div>}
+            <div>
+                <Navbar/>
+                <div className="text-center">
+                    <Infixinput onConvert={this.onConvertAction}/>
+                    <div id="result_table" className="center">
+                        <BootstrapTable
+                            keyField="id"
+                            data={this.state.posTable}
+                            columns={columns}
+                            striped
+                            noDataIndication={() =>
+                                'Enter a valid infix Expression and press Convert'
+                            }
+                        />
+                    </div>
+                    <div id="result_container">
+                        {resultText}
+                        {this.state.result && <div className="well">{this.state.result}</div>}
+                    </div>
                 </div>
             </div>
         );
