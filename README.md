@@ -1,4 +1,4 @@
-# Infix To Postfix Converter
+# Postfixify
 
 Infix to postfix converter with tracing of the stack required to perform the task
 
